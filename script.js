@@ -1,10 +1,24 @@
 const cryptoList = document.getElementById("cryptoList");
 
 async function fetchCryptocurrencyData() {
-    const response = await fetch("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin,ethereum,cardano");
+    const coinIds = [
+        "ethereum", 
+        "bitcoin", 
+        "cardano", 
+        "axie-infinity", 
+        "ronin",
+        "pepe-cash",
+        "small-love-potion",
+        "helium",
+        "usd-coin",
+        "fantom"
+    ];
+    
+    const response = await fetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=${coinIds.join(",")}`);
     const data = await response.json();
     return data;
 }
+
 
 async function displayCryptocurrencies() {
     try {
