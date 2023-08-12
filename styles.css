@@ -54,3 +54,17 @@ nav {
     width:50px;
     cursor:pointer;
 }
+nav ul {
+    flex:1;
+
+}
+nav ul li {
+    display:inline-block;
+    margin:10px 20px;
+
+
+}
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+}
