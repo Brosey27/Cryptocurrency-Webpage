@@ -33,8 +33,10 @@ header {
     font-weight: bold;
 }
 
+
 .crypto-price {
     color: #007bff;
+   
 }
 
 .crypto-change {
@@ -75,4 +77,9 @@ nav .btn{
     padding:10px 30px;
     border-radius:20px;
     
+}
+footer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
