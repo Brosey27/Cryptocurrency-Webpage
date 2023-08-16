@@ -1,3 +1,29 @@
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 20px;
+}
+
+.about-left, .about-right {
+    display: flex;
+    align-items: center;
+}
+
+.about-left h1, .about-right h1 {
+    margin-left: 10px;
+    color: white;
+}
+
+.crypto-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -57,8 +83,11 @@ nav {
     cursor:pointer;
 }
 nav ul {
-    flex:1;
-
+    flex: 1;
+    display: flex; /* Display the list items as a flex container */
+    justify-content: center; /* Center the list items horizontally */
+    align-items: flex-start; /* Align the list items to the top */
+    margin-top: 10px; /* Add some top margin to separate from the navigation bar */
 }
 nav ul li {
     display:inline-block;
@@ -70,14 +99,21 @@ nav ul li a{
     color:#fff;
     text-decoration:none;
 }
-nav .btn{
-    color:#fff;
-    text-decoration:none;
-    border:1px solid #fff;
-    padding:10px 30px;
-    border-radius:20px;
-    
+nav .social-logo {
+    display: flex; /* Display as flex to align vertically */
+    align-items: center; /* Align items vertically */
+    margin-left: auto; /* Push the social logos to the right */
 }
+
+.social-logo img {
+    width: 25px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 5px; /* Add some spacing between logos */
+    border: 1px solid #fff;
+    padding: 5px;
+    border-radius: 20px;
+}
+
 footer {
     display:flex;
     justify-content: center;
