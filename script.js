@@ -65,10 +65,14 @@ async function displayCryptocurrencies() {
     } catch (error) {
         console.error("Error fetching cryptocurrency data:", error);
     }
+
     function createCryptoItem(crypto) {
         const cryptoItem = document.createElement("div");
         cryptoItem.classList.add("crypto-item");
         cryptoItem.innerHTML = `
+            <div class="crypto-logo">
+                <img src="${crypto.image}" class="crypto-logo-small">
+            </div>
             <div class="crypto-name">${crypto.name}</div>
             <div class="crypto-price">$${crypto.current_price.toFixed(2)}</div>
             <div class="crypto-change ${crypto.price_change_percentage_24h >= 0 ? '' : 'negative'}">${crypto.price_change_percentage_24h.toFixed(2)}%</div>
@@ -78,10 +82,3 @@ async function displayCryptocurrencies() {
 }
 
 displayCryptocurrencies();
-
-
-
-
-    
-
-
