@@ -225,13 +225,15 @@ footer {
 
 .center-image img {
     max-width: 100%;
-    height: auto;
+    height: 400px;
 }
 
 .choose-us-item {
     display: flex;
     align-items: center;
     margin: 20px;
+   
+    
 }
 
 .choose-us-item h2 {
