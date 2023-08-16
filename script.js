@@ -1,3 +1,32 @@
+async function displayAboutSection() {
+    const bitcoinLogo = document.getElementById("bitcoinLogo");
+    const ethereumLogo = document.getElementById("ethereumLogo");
+    const aboutLeft = document.querySelector(".about-left");
+    const aboutRight = document.querySelector(".about-right");
+
+    // Fetch data for Bitcoin and Ethereum
+    const bitcoinData = await fetchCryptocurrencyDataForId("bitcoin");
+    const ethereumData = await fetchCryptocurrencyDataForId("ethereum");
+
+    bitcoinLogo.src = bitcoinData.image;
+    aboutLeft.innerHTML += `
+        <div class="crypto-price">$${bitcoinData.current_price.toFixed(2)}</div>
+        <div class="crypto-change ${bitcoinData.price_change_percentage_24h >= 0 ? '' : 'negative'}">${bitcoinData.price_change_percentage_24h.toFixed(2)}%</div>
+    `;
+
+    ethereumLogo.src = ethereumData.image;
+    aboutRight.innerHTML += `
+        <div class="crypto-price">$${ethereumData.current_price.toFixed(2)}</div>
+        <div class="crypto-change ${ethereumData.price_change_percentage_24h >= 0 ? '' : 'negative'}">${ethereumData.price_change_percentage_24h.toFixed(2)}%</div>
+    `;
+}
+
+
+
+
+
+
+
 const cryptoList = document.getElementById("cryptoList");
 
 async function fetchCryptocurrencyData() {

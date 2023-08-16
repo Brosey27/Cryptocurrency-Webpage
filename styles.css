@@ -1,9 +1,20 @@
+.container {
+    border: 1px solid black;
+    margin-bottom: 15px;
+  
+}
+.container h1 {
+    padding-left:20px;
+}
+
+
+
 .about-section {
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
-    background-color: #222;
     padding: 20px;
+    border: 1px solid black;
 }
 
 .about-left, .about-right {
@@ -11,9 +22,13 @@
     align-items: center;
 }
 
-.about-left h1, .about-right h1 {
-    margin-left: 10px;
+.about-left h1 {
+    margin-left: 0px;
     color: white;
+}
+.about-right h1 {
+    color: linear-gradient(to bottom, #2e1963, #131862, #000000); /* Dark blackish purple background */
+    
 }
 
 .crypto-logo {
@@ -28,7 +43,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #101010; /* Dark background color */
+    background: linear-gradient(to bottom, #2e1963, #131862, #000000); /* Dark blackish purple background */
     color: #fff; /* White text color */
 }
 
@@ -45,23 +60,26 @@ header {
     padding: 20px;
 }
 
+
+
 .crypto-item {
-    border: 1px solid #ccc;
+    border: 1px solid black;
     padding: 10px;
     margin: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1a1a1a; /* Dark gray background for crypto items */
+   
 }
 
 .crypto-name {
     font-weight: bold;
+    color:#fff;
 }
 
 
 .crypto-price {
-    color: #007bff;
+    color: #fff;
    
 }
 
@@ -92,6 +110,7 @@ nav ul {
 nav ul li {
     display:inline-block;
     margin:10px 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 
 }
@@ -119,3 +138,4 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
