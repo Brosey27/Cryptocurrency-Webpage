@@ -78,6 +78,8 @@ header {
 
 
 
+
+
 .crypto-item {
     border: 1px solid black;
     padding: 10px;
@@ -193,4 +195,50 @@ footer {
     width: 20px; /* Set the width of the logo */
     height: auto;
     margin-right: 10px; /* Add spacing between logo and text */
+}
+
+.choose-us {
+    
+    padding: 50px 0;
+    text-align: center;
+}
+
+.choose-us-title {
+    background: linear-gradient(to right, blue, pink);
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+}
+
+.choose-us-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.left-content,
+.right-content {
+    flex: 1;
+}
+
+.center-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.choose-us-item {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.choose-us-item h2 {
+    margin-right: 10px;
+}
+
+.choose-us-item img {
+    max-width: 30px;
+    height: auto;
 }
