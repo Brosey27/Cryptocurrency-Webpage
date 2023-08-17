@@ -22,11 +22,6 @@ async function displayAboutSection() {
 }
 
 
-
-
-
-
-
 const cryptoList = document.getElementById("cryptoList");
 
 async function fetchCryptocurrencyData() {

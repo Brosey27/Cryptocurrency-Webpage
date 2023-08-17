@@ -12,9 +12,9 @@
     top: 0;
     left: 0;
     width:100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Add your preferred background color */
-    z-index: 100; /* Ensure the navigation is above other content */
-    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+    background-color: rgba(0, 0, 0, 0.8); 
+    z-index: 100; 
+    transition: background-color 0.3s ease; 
 }
 
 
@@ -55,7 +55,7 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(to bottom, #2e1963, #131862, #000000); /* Dark blackish purple background */
-    color: #fff; /* White text color */
+    color: #fff; 
 }
 
 header {
@@ -368,11 +368,7 @@ height:300px;
 .row-text .bottom-left-img .bottom-right-img {
     padding-top: 700px;
 }
-/* Reset and general styles */
 
-/* Your existing CSS */
-
-/* Media queries for responsive design */
 
 /* Small screens (up to 576px) */
 @media (max-width: 576px) {
@@ -426,9 +422,7 @@ height:300px;
         margin-bottom: 5px;
     }
 
-    /* Other sections' media queries */
-
-    /* Choose Us section */
+  
  
 
     /* Join Us section */
