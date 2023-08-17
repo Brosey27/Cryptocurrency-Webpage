@@ -12,9 +12,10 @@
     top: 0;
     left: 0;
     width:100%;
-    background-color: rgba(0, 0, 0, 0.8); 
+    background-color: rgba(23, 4, 46, 0.9); 
     z-index: 100; 
     transition: background-color 0.3s ease; 
+    border: 1px solid black;
 }
 
 
@@ -346,7 +347,7 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 50px 0; /* Adjust padding as needed */;
-    padding-top: 100px;
+    
     background: linear-gradient(to right, blue, pink);
     max-width:100%;
     color: white;
