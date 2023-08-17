@@ -100,4 +100,5 @@ window.addEventListener('scroll', () => {
 
 
 
+
 displayCryptocurrencies();

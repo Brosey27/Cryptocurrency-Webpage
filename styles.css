@@ -28,6 +28,26 @@
     
 }
 
+/* Add this CSS to your existing stylesheet */
+.about-section img {
+    /* Set initial properties */
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+
+    /* Apply animation on hover */
+    animation: hoverAnimation 5s infinite alternate;
+}
+
+/* Define the animation */
+@keyframes hoverAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px); /* Adjust the distance and direction of the hover */
+    }
+}
+
 .about-left, .about-right {
     display: flex;
     align-items: center;
@@ -47,6 +67,26 @@
     height: 40px;
     margin-right: 10px;
 }
+
+.about-section .crypto-logo {
+       /* Set initial properties */
+       transform: translateY(0);
+       transition: transform 0.3s ease-in-out;
+   
+       /* Apply animation on hover */
+       animation: hoverAnimation 5s infinite alternate;
+   }
+   
+   /* Define the animation */
+   @keyframes hoverAnimation {
+       0% {
+           transform: translateY(0);
+       }
+       100% {
+           transform: translateY(-10px); /* Adjust the distance and direction of the hover */
+       }
+   }
+
 
 
 
@@ -128,6 +168,8 @@ nav {
     width:50px;
     cursor:pointer;
 }
+
+
 nav ul {
     flex: 1;
     display: flex; /* Display the list items as a flex container */
@@ -285,17 +327,34 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 50px 0; /* Adjust padding as needed */;
-    margin-top: 200px;
+    padding-top: 100px;
     background: linear-gradient(to right, blue, pink);
     max-width:100%;
     color: white;
     border-radius: 10px;
+    margin-top: 50px;
    
 }
 
 .join-us-text {
     text-align: center;
 }
+
+.join-us-text img {
+   
+    flex-direction:row;
+    width:50px;
+    height:50px;
+}
+
+ .join-us .bottom-left-img img {
+    display:flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    margin-right: 20px;
+    width:300px;
+    height:300px;
+    }
 
 
 
@@ -318,7 +377,7 @@ footer {
 .join-btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #2e1963; /* Adjust background color as needed */
+    background-color: transparent;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -351,20 +410,9 @@ footer {
    align-items:center;
    
 }
-.bottom-left-img img{
-display:flex;
-justify-content:flex-start;
-align-items: flex-start;
-width:300px;
-height:300px;
-}
-.bottom-right-img img{
-    display:flex;
-    justify-content:flex-end;
-    align-items:flex-end;
-    width:300px;
-    height:300px;
-}
+
+
+
 .row-text .bottom-left-img .bottom-right-img {
     padding-top: 700px;
 }
