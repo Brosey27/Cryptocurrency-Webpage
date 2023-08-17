@@ -40,7 +40,11 @@ async function fetchCryptocurrencyData() {
         "small-love-potion",
         "helium",
         "usd-coin",
-        "fantom"
+        "fantom",
+        "binancecoin", // BNB
+        "tether",      // Tether
+        "ripple",      // XRP
+        "dogecoin"     // Dogecoin
     ];
     
     const response = await fetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=${coinIds.join(",")}`);
@@ -80,5 +84,25 @@ async function displayCryptocurrencies() {
         return cryptoItem;
     }
 }
+
+// Get the navigation menu element
+const nav = document.querySelector('nav');
+
+// Get the height of the navigation menu
+const navHeight = nav.getBoundingClientRect().height;
+
+// Add a scroll event listener
+window.addEventListener('scroll', () => {
+    // Check the scroll position
+    if (window.scrollY > navHeight) {
+        // If the user has scrolled beyond the navigation height, add the fixed-nav class
+        nav.classList.add('fixed-nav');
+    } else {
+        // Otherwise, remove the fixed-nav class
+        nav.classList.remove('fixed-nav');
+    }
+});
+
+
 
 displayCryptocurrencies();
