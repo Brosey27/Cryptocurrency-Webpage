@@ -71,10 +71,10 @@
 .about-section .crypto-logo {
        /* Set initial properties */
        transform: translateY(0);
-       transition: transform 0.3s ease-in-out;
+       transition: transform 1s ease-in-out;
    
        /* Apply animation on hover */
-       animation: hoverAnimation 5s infinite alternate;
+       animation: hoverAnimation 3s infinite alternate;
    }
    
    /* Define the animation */
@@ -308,10 +308,10 @@ footer {
 
       /* Set initial properties */
       transform: translateY(0);
-      transition: transform 0.3s ease-in-out;
+      transition: transform 1s ease-in-out;
   
       /* Apply animation on hover */
-      animation: hoverAnimation 5s infinite alternate;
+      animation: hoverAnimation 3s infinite alternate;
   }
   
   /* Define the animation */
