@@ -305,7 +305,26 @@ footer {
 .choose-us-logo img {
     max-width: 40px;
     height: auto;
-}
+
+      /* Set initial properties */
+      transform: translateY(0);
+      transition: transform 0.3s ease-in-out;
+  
+      /* Apply animation on hover */
+      animation: hoverAnimation 5s infinite alternate;
+  }
+  
+  /* Define the animation */
+  @keyframes hoverAnimation {
+      0% {
+          transform: translateY(0);
+      }
+      100% {
+          transform: translateY(-10px); /* Adjust the distance and direction of the hover */
+      }
+  }
+
+
 
 .choose-us-text {
     flex: 1;
