@@ -205,11 +205,42 @@ nav .social-logo {
     border-radius: 20px;
 }
 
+/* Add this CSS to your existing stylesheet */
 footer {
-    display:flex;
+    background-color: #1a1a1a; /* Set the background color for the footer */
+    color: #fff; /* Set text color */
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 10px 0; /* Add spacing above and below the copyright text */
+}
+
+footer ul {
+    list-style: none; /* Remove bullet points from the list */
+    padding: 0;
+    margin: 0;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
+
+footer ul li {
+    margin: 0 15px; /* Add spacing between list items */
+}
+
+footer ul a {
+    text-decoration: none;
+    color: #fff; /* Set link color */
+}
+
+footer img {
+    max-width: 40px; /* Adjust the maximum width of the images */
+    height: auto;
+    margin: 0 10px; /* Add spacing between images */
+}
+
 
 .popular-coins {
     text-align: center; /* Center-align the content */
@@ -254,6 +285,7 @@ footer {
     
     padding: 50px 0;
     text-align: center;
+    margin-bottom:100px;
 }
 
 .choose-us-title {
@@ -342,99 +374,67 @@ footer {
     padding: 0;
     color: #666; /* Adjust text color as needed */
 }
-.join-us {
+
+
+.signup-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 0; /* Adjust padding as needed */;
-    
-    background: linear-gradient(to right, blue, pink);
-    max-width:100%;
-    color: white;
     border-radius: 10px;
-    margin-top: 50px;
-   
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to right, blue, pink);
+    overflow: hidden;
 }
 
-.join-us-text {
-    text-align: center;
+.signup-container img {
+    width: 40%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
-.join-us-text img {
-   
-    flex-direction:row;
-    width:50px;
-    height:50px;
-}
-
- .join-us .bottom-left-img img {
-    display:flex;
-    justify-content:flex-start;
-    align-items: flex-start;
-    margin-right: 20px;
-    width:300px;
-    height:300px;
-    }
-
-
-
-.crypto-logo2 {
-    width: 40px;
-    height: 40px;
-    margin: 0 10px; /* Add spacing between images */
-}
-
-.join-us-text h1 {
-    margin: 0;
-    padding: 10px 0; /* Add spacing around the h1 element */
-   
-}
-
-.join-us-text p {
-    margin: 20px 10px; /* Add spacing above and below the p element */
-}
-
-.join-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: transparent;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    
-    
-}
-
-.join-btn:hover {
-    background-color: #131862; /* Adjust hover background color as needed */
-}
-
-.row1 {
+.form-container {
+    padding: 20px;
+    width: 60%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px; /* Adjust the gap between images */
-   
 }
 
-.row1 img {
-    width: 30px; /* Adjust the desired width for the images */
-    height: auto; /* Maintain aspect ratio */
-    
-   
-}
-.row-text  {
-   display:flex;
-   justify-content:center;
-   align-items:center;
-   
+.sign-up-h1 {
+    margin-bottom: 10px;
 }
 
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
+input {
+    margin: 8px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
 
-.row-text .bottom-left-img .bottom-right-img {
-    padding-top: 700px;
+.terms {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.sign-up-btn {
+    background-color: #7913ee;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login {
+    font-size: 14px;
+    margin-top: 10px;
 }
 
 
